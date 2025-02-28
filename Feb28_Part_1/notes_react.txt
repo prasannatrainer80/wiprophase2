@@ -1,0 +1,76 @@
+
+Web Application : 
+
+These are the applications, that which are to be called from various places rather than where they are created. 
+If you want to make any distributed or robust applications, then we need the help of web applications. 
+
+You can create web applications in 2 ways as
+
+(I) Scripting Languages
+
+(ii) Programming Languages 
+
+Scripting languages are languages that which are interpreted, during runtime they takes lot of time to execute. 
+
+Programming languages are languages that which are compiled first, during runtime they takes very less time to execute.
+
+In Web applications, we can implement both 
+
+(I) Client-Side Scripting 
+
+	-> Enables you to access the application from 
+		same system
+
+	-> No Network traffic
+
+	-> Execution will be faster
+
+(ii) Server-Side Scripting 
+
+	-> Enables you to access the application from server
+	-> Network traffic is high
+	-> A bit slower 
+
+(==) Any intranet based application w.r.t. No Security, please opt for client-side scripting 
+
+(==) Any internet based application w.r.t. min Security, 
+please opt for both client-side/server-side scripting
+
+(==) Any internet based application w.r.t. high security, please opt for server-side scripting 
+
+React : 
+
+React is a UI framework, that which allows you to create any standalone, Web and Mobile based applications. 
+
+React can be done in either by javascript or typescript. 
+
+Components : React is all about components, these components can be reusable with help you to maintain code when working with large applications. 
+
+	There are 2 types of components in react as
+
+	(I) class components : Allows you to write code programmatically with life cycle, and follows oops concept.
+
+	(ii) functional components : These are the components, that which allows you follow javascript syntaxes and easily we can write the code. 
+
+	(iii) React supports One Way binding, so we need to handle data w.r.t. each event like change/click etc...The flow of the data can be monitored w.r.t. State
+
+	(iv) DOM (Document Object Model) Provides structure for you given html document w.r.t. events and state. But previous we need to recompile and execute when you do the code changes, but this problem completely overcome in react, as it follows virtual dom concept. 
+
+
+	Virtual DOM object is a representation of original dom (vs) modified dom, when you run the application at first time, the entire rendered application will be stored in DOM. now when you make the changes, then it compares the diff. between original dom (vs) new dom and only the updates can be rendered. This makes the application to run faster and no waste of memory. 
+
+You can render DOM elements in react as
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+In react, props is the way to pass data between components, the short name of properties are assigned to this, it works similar to HTML attributes and function arguments. 
+
+
+
+
+
+
+
+
+
+
