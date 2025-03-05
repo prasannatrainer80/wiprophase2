@@ -16,3 +16,12 @@ create table Account
    CheqFacil varchar(10)
 )
 GO
+
+Create Table Trans
+(
+   TranId INT PRIMARY KEY IDENTITY(1,1),
+   AccountNo INT,
+   TranAmount NUMERIC(9,2),
+   TranType varchar(5),
+   TranDate Date default getdate()
+)
