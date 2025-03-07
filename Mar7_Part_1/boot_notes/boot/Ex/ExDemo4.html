@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function ageValidate() {
+                try {
+                    var age = frmData.age.value;
+                    if (age <= 0) {
+                        throw new Error("Invalid Age...");
+                    } else if (age < 18) {
+                        throw new Error("You Cannot Vote...");
+                    } else {
+                        document.writeln("you Can vote...");
+                    }
+                } catch(error) {
+                    document.writeln("Error Code   " +error.message);
+                } finally {
+                    alert("Program from Excelr Team...");
+                }
+            }
+        </script>
+    </head>
+<body>
+    <form name="frmData">
+        <center>
+            Enter Your Age : 
+            <input type="number" name="age" /><br/><br/>
+            <input type="button" value="Show" onclick="ageValidate()" />
+        </center>
+    </form>
+</body>
+</html>

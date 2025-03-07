@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Hello All
+        </title>
+        <script>
+            function show() {
+                alert(document.title);
+                var c1 = localStorage.getItem("ananth");
+                var c2 = localStorage.getItem("maneesh");
+                var c3 = localStorage.getItem("guru");
+                alert("Ananth's Score  " +c1);
+                alert("Maneesh's Score  " +c2);
+                alert("Guru's Score  " +c3);
+            }
+            function clearMe() {
+                localStorage.clear();
+            }
+        </script>
+    </head>
+<body>
+    <input type="button" value="Show" onclick="show()" />
+    &nbsp;&nbsp;&nbsp;
+    <input type="button" value="Clear Cookies" onclick="clearMe()" />
+</body>
+</html>

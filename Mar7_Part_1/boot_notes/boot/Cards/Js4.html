@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function Book(id, name, author) {
+                this.bookId = id;
+                this.bookName = name;
+                this.author = author;
+            }
+            function show() {
+                var book = new Book(1, "Let us C", "Yashwanth");
+                if (book.hasOwnProperty("author")) {
+                    document.writeln("It is having property Author...");
+                }
+                if (Book.prototype.isPrototypeOf(book)) {
+                    document.writeln("Book has object called book...");
+                }
+            }
+        </script>
+    </head>
+<body onload="show()">
+    
+</body>
+</html>

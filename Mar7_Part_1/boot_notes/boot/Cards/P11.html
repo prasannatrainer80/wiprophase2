@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            var news = ["1. Rama Mandir","2. Cricket Feeds", "3. Creating Pages",
+                    "4. Testing Principles"
+            ];
+            function newsData() {
+                
+                var total = news.length;
+                document.getElementById("n1").innerHTML = total;
+            }
+            function addNews() {
+                news.push(frmTest.news.value);
+                newsData();
+                frmTest.news.value="";
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+<body onload="newsData()">
+    <div class="container">
+        <h2>Badges</h2>
+         <a href="#">News <span class="badge" id="n1"></span></a><br>
+         <a href="#">Comments <span class="badge">10</span></a><br>
+         <a href="#">Updates <span class="badge">2</span></a>
+         <form name="frmTest">
+            Enter News : 
+            <input type="text" name="news" /> 
+            <input type="button" value="Add News" onclick="addNews()" /> <br/><br/>
+        </form>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            class First {
+                constructor() {
+                    document.writeln("Base Class Constructor..." + "<br/>");
+                }
+            }
+
+            class Second extends First {
+                constructor() {
+                    super();
+                    document.writeln("Derived Class Constructor..." + "<br/>");
+                }
+            }
+        </script>
+    </head>
+<body>
+    <script>
+        var obj = new Second();
+    </script>
+</body>
+</html>

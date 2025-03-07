@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+<body>
+    <select id="student">
+        <option value="Ananth">Ananth</option>
+        <option value="Guru">Guru</option>
+        <option value="Rajesh">Rajesh</option>
+        <option value="Naresh">Naresh</option>
+        <option value="Mounika">Mounika</option>
+    </select>
+    <script>
+        document.getElementById("student").addEventListener("change", showName);
+        function showName() {
+            var res = document.getElementById("student");
+            alert(res.options[res.selectedIndex].text);
+            var selectedText = res.options[res.selectedIndex].text;
+            alert(selectedText);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+BootStrap Cards : 
+
+It provbies a flexible and extensible content container
+with multiple variant and options. 
+
+A card is a flexible and extensible content container,
+includes options for header and footers, backgrouind colors
+etc...
+
+It is nice replacement for panels, thumbnails etc...
+
+What is a Stretched Link : 
+
+It makes any html element or bootstrap component clicable by "stretching a nest link. 
+
+
+After any element, you need to clik, then we need to add predefined class as 
+.stretched-link class. The position of the element will be relative, 
+
+Objective Oriented Programming : 
+________________________________
+
+It is an approach that provides a way of modularizing programming, that which can be used to create small partition memory area for both data and objects, which are to be used as templates for creating copies of such modules on demand. 
+
+in javascript, we can create object by using new keyword. 
+
+var obj = new entity()
+
+var obj = new Date() it creates an object to predefined Date class.
+
+
+But, if you want to create your own objects, define them as function and 
+allows. 
+
+Constructor : A constructor is a special member, used to initilize the member variables of the class, it is special because it has the same name as that of class name. 
+
+Rules : 
+________
+
+It will be invoked automatically once the instance of the class created. 
+
+this keyword used to initialize the member variables of the class/function. 
+
+
+
+

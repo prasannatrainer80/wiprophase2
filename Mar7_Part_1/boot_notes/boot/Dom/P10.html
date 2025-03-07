@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function show() {
+                var count = document.getElementsByName("gender");
+                document.getElementById("demo").innerHTML = count.length;
+            }
+        </script>
+    </head>
+<body>
+    Gender : 
+    <input type="radio" name="gender" value="Male" /> Male
+    <input type="radio" name="gender" value="Female" /> Female
+    <br/><br/>
+    <input type="button" value="Show Count" onclick="show()" />
+    <hr/> 
+    <p id="demo"></p>
+</body>
+</html>

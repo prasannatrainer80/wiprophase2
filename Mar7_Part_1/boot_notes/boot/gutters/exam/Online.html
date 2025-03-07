@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="css/online.css" />
+        <script type="text/javascript" src="js/Online.js"></script>
+    </head>
+<body onload="show()">
+    <p class = "title">Online Exam @ Excelr</p>
+    <div class="MainForm" align="Left" >		
+        <br/><br/>
+        <form name="ExamForm" id="inputForm1" action="" method="GET">
+                <p id="Question">
+                    This is the question
+                </p>
+                <input type = "radio" name = "OptionR" 
+                            onClick="AnswerChoosed(1)" id = "Opt1"/>
+                <label id = "Option0" name = "Name1">1st Option</label><br />
+                <input type = "radio" name = "OptionR" 
+                            onClick="AnswerChoosed(2)"  id = "Opt2"/> 
+                <label id = "Option1">2nd Option</label><br />
+                <input type = "radio" name = "OptionR" 
+                            onClick="AnswerChoosed(3)"  id = "Opt3"/> 
+                <label id = "Option2">3rd Option</label><br />
+                <input type = "radio" name = "OptionR" 
+                            onClick="AnswerChoosed(4)"  id = "Opt4"/> 
+                <label id = "Option3">4th Option</label><br />
+                <br />
+                <br />
+                <input type = "button" value = "Next" onClick = "NextQuestion()">
+        </form>
+    </div>
+</body>
+</html>

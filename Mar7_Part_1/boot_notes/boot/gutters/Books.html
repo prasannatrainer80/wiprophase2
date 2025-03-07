@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript" src="Books.js"></script>
+    </head>
+<body>
+    <form name="frmData">
+        Book Id : 
+        <input type="number" name="bookId" /> <br/><br/>
+        Book Name : 
+        <input type="text" name="bookName" /> <br/><br/>
+        Author Name : 
+        <input type="text" name="authorName" /> <br/><br/> 
+        ISBN : 
+        <input type="text" name="isbn" /> <br/><br/> 
+        <input type="button" value="Add Book" onclick="addBook(frmData.bookId.value, 
+                frmData.bookName.value, frmData.authorName.value, 
+                frmData.isbn.value)" />
+    </form>
+    <input type="button" value="Fetch Books" onclick="show()" />
+</body>
+</html>

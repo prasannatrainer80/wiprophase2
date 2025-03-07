@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function Employ(id, name, salary) {
+                this.empId = id;
+                this.ename = name;
+                this.basic = salary;
+            }
+            function show() {
+                var obj = new Employ(1, "Manish",884522);
+                document.writeln("Employ Id " +obj.empId + " Employ Name  " 
+                        +obj.ename + " Employ Salary  " +obj.basic);
+            }
+        </script>
+    </head>
+<body onload="show()">
+
+</body>
+</html>

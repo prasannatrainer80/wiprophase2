@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+                function divEx() {
+                    var firstNo, secondNo, result;
+                    firstNo = frmCalc.firstNo.value;
+                    secondNo = frmCalc.secondNo.value;
+                    result = firstNo / secondNo;
+                    alert("Result is  " +result);
+                }
+        </script>
+    </head>
+<body>
+    <form name="frmCalc">
+        <center>
+            First Number : 
+            <input type="number" name="firstNo" /> <br/><br/>
+            Second Number : 
+            <input type="number" name="secondNo" /> <br/><br/>
+            <input type="button" value="Division" onclick="divEx()" />
+        </center>
+    </form>
+</body>
+</html>

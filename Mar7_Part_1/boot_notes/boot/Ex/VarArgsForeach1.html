@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function attendance(day, ...students) {
+                document.write(" Day " +day);
+                students.forEach(x => {
+                    document.write(x + "  ");
+                    document.writeln();
+                });
+            }
+        </script>
+    </head>
+<body>
+    <script>
+        attendance(1);
+        document.writeln("<Br/>");
+        attendance(2, "Akhil","Mounika","Viswa");
+        document.writeln("<br/>");
+        attendance(3, "Muskan","Leela");
+    </script>
+</body>
+</html>

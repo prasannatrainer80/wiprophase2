@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script>
+            function show() {
+                alert("Hitted" +document.cookie);
+                document.getElementById("cookieInfo").innerHTML = document.cookie;
+            }
+        </script>
+    </head>
+<body onload="show()">
+    <span id="cookieInfo"></span>
+</body>
+</html>

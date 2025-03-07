@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            function show() {
+                var data = document.getElementsByTagName("p");
+                alert("Paragraph Data is  " +data[0].innerHTML);
+                alert("Paragraph Data is  " +data[1].innerHTML);
+            }
+        </script>
+    </head>
+<body>
+    <p>This is Welcome Message...</p>
+    <p id="p1">This is Demo Message...</p>
+    <p id="p2">This is Text Message...</p>
+    <h2>Javascript Technology</h2>
+    <input type="button" value="Show" onclick="show()" />
+</body>
+</html>

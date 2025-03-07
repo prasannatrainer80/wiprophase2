@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            class First {
+                show() {
+                    document.writeln("From Class First..." + "<br/>");
+                }
+            }
+
+            class Second extends First {
+                display() {
+                    document.writeln("From Class Second..." +"<br/>");
+                }
+            }
+        </script>
+    </head>
+<body>
+    <script>
+        var obj = new Second();
+        obj.show();
+        obj.display();
+    </script>
+</body>
+</html>

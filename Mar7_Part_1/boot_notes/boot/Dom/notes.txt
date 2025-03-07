@@ -1,0 +1,33 @@
+Topics : Javascript DOM
+
+BootStrap : Gutters 
+
+DOM (Document Object Model) 
+
+	Javascript can access all the elements in a
+website maming use of DOM. As the web browser creates 
+DOM of the webpage when the page is loaded. The DOM Model is created as
+a tree of objects. 
+
+	It contains as Document -> Root (HTML) -> <head>   -> Body
+
+BootStrap 5 have concept called gutters, used to give padding between columns. 
+
+it can be for responsive space, alignment w.r.t. Grid System. 
+
+How the gutters will work : 
+
+	.padding-right
+
+	.padding-left 
+
+Gutters will produce horizantal padding, spaces between content of the column. 
+
+Gutters begin at width of 1.5 rem (24px) 
+
+we can specify gutters using .gy classes 
+
+Gutters can responsively adjusted. 
+
+
+

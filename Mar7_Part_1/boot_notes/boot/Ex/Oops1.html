@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script>
+            class Employ {
+                 constructor(id, name, basic) {
+                    this.empId = id;
+                    this.empName = name;
+                    this.empSalary = basic;
+                 }
+            show() {
+                document.writeln("Employ No  " +this.empId + "<Br/>");
+                document.writeln("Employ Name  " +this.empName + "<br/>");
+                document.writeln("Employ Salary   " +this.empSalary + "<br/><hr/>");
+            }
+        }
+    </script>
+    </head>
+<body>
+    <script>
+        var e1 = new Employ(1, "Ananth", 88524);
+        var e2 = new Employ(2, "Muskan", 86345);
+        e1.show();
+        e2.show();
+    </script>
+</body>
+</html>

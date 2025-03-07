@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            class Employ {
+                 constructor() {
+                    var empId;
+                    var empName;
+                    var empSalary;
+                 }
+
+                 getEmpId() {
+                    return this.empId;
+                 }
+                 setEmpId(empId) {
+                    this.empId = empId;
+                 }
+                
+                 getEmpName() {
+                    return this.empName;
+                 }
+
+                 setEmpName(empName) {
+                    this.empName = empName;
+                 }
+
+                 getEmpSalary() {
+                    return this.empSalary;
+                 }
+
+                 setEmpSalary(empSalary) {
+                    this.empSalary = empSalary;
+                 }
+            
+        }
+    </script>
+    </head>
+<body>
+    <script>
+        var e1 = new Employ();
+        e1.setEmpId(1);
+        e1.setEmpName("Teja");
+        e1.setEmpSalary(88645);
+        document.writeln("Employ Id  " +e1.getEmpId() + "<br/>");
+        document.writeln("Employ Name  " +e1.getEmpName() + "<br/>");
+        document.writeln("Salary  " +e1.getEmpSalary() + "<Br/><hr/>");
+    </script>
+</body>
+</html>

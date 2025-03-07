@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function calc() {
+                try {
+                    var firstNo = parseInt(frmCalc.firstNo.value);
+                    var secondNo = parseInt(frmCalc.secondNo.value);
+                    if (firstNo < 0 || secondNo < 0) {
+                        throw new Error("Negaive Numbers Not Allowed...");
+                    } 
+                    if (firstNo == 0 || secondNo == 0) {
+                        throw new Error("Zero is Invalid Value...");
+                    }
+                    var result = firstNo * secondNo;
+                    alert("Result is  " +result);
+
+                } catch(error) {
+                    document.writeln("Error Message  " +error.message);
+                }
+               
+            }
+        </script>
+    </head>
+<body>
+    <form name="frmCalc">
+        <center>
+            First Number : 
+          <input type="number" name="firstNo" /> <br/><br/>
+            Second Number : 
+          <input type="number" name="secondNo" /> <br/><br/>
+          <input type="button" value="Calc" onclick="calc()" />
+        </center>
+    </form>
+</body>
+</html>

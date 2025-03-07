@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function show() {
+            var news = ["Sports", "Movies", "Main Page"];
+            var nlen = news.length;
+            document.getElementById("n1").innerHTML = nlen;
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="show()">
+<div class="container">
+         <h2>Badges</h2>
+          <a href="#">News <span class="badge" id="n1"></span></a><br>
+          <a href="#">Comments <span class="badge">10</span></a><br>
+          <a href="#">Updates <span class="badge">2</span></a>
+    </div>
+
+</body>
+</html>
