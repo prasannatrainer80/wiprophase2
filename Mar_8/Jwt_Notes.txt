@@ -1,0 +1,49 @@
+
+
+Authentication 
+
+Authentication verifies who is the user,
+works through passwords, otps, biometic info
+etc.  and other information provided by the 
+entered user. Authentication is the first step of a good identity and access management process. 
+
+Authentication is visible to and partially changeable by 
+the user. 
+
+Authorization
+
+Authroization determines why resources a user can access. 
+
+It works under settings that are implemented and maintained by the organization.  Authroization always takes place after authentication. Authorization cannot be updated by end user. 
+
+What is JWT 
+
+JSON WEB TOKEN is a open standard that provides simple way to securely transmit information between parties via a JSON object. 
+
+Verification takes place through a signature, this signature allows only a server that has the key to decode and verify the content of the tokens received and grant or deny access to their resources. 
+
+JSON web token comes in encrypted format, so if anyone discovers your token, they will not be able to see anything other than encr format. 
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDE0MDgxODEsImlzcyI6Ikp3dEF1dGhFeGFtcGxlIiwiYXVkIjoiSnd0QXV0aEV4YW1wbGVBdWRpZW5jZSJ9.olpm56oe3oQpLnDlZIHs9nTU7_p7MqgPxf6tP6OlqT4
+
+JWTs consist of 3 parts : 
+_________________________
+
+	(i) Header : The header typically consists of two parts as token type (JWT) and the signature algorithm used. 
+
+	(ii) Payload : The second part of the token is the payload, which contains the declarations, claims are statements about an entity and additional data. There are three types of claims as, registered, public and private. 
+
+	(iii) Signature : To create the signature part, you have to taken the encoded header, the encoded payload, a secret and the algorithm specified in the header and sign it.
+
+    Jwt Working Process : 
+    ______________________
+
+
+    -> Sends the token request 
+    -> Validates the information and returns the JWT token
+    -> This jwt token will be send as input to the resource 	file
+    -> Once validation done, it renders the protected resources.
+
+
+
+
