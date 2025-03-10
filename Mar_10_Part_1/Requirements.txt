@@ -1,0 +1,14 @@
+Implement 
+_______________
+
+1)  Show Doctors
+2)  Search By DoctorId
+3)  Search By Specialization
+4)  Add Doctor
+5)  Add Patient
+6)  Search Patient By HealthProblem
+7)  Search Patients by DoctorId 
+8)  Search By PatientId
+9)  Doctor Login
+10) Doctor Search By Mobile Number
+
