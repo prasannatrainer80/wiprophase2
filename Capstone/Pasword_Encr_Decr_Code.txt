@@ -90,3 +90,24 @@ Important Notes
 Key and IV: Ensure that the key and IV are securely stored and managed. They should be kept secret and not hard-coded in production code.
 Security Practices: For password storage, consider using hashing algorithms like PBKDF2, bcrypt, or Argon2 instead of encryption.
 Feel free to adapt this code to your specific needs and ensure you follow best security practices!
+__________________________________________________
+
+Now how to apply this is
+
+in Controller AddUser Post method as 
+
+[FromBody] User user) {
+   string encr = EncryptionHelper.Encrypt(user.Password);
+   user.Password = encr;
+   _dbContext.add(user);
+}
+
+For Login
+________
+
+User user ){
+   Strin decr = DecryptionHelper.Decrypt(user.Passord);
+   if (User.Password==decr) {
+	correct-code
+   }
+}
