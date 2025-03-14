@@ -1,0 +1,234 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Wipro_Dotnet\\EmployCrud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\middleware\\decryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\middleware\\decryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\middleware\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\middleware\\encryptionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\models\\hospitalcoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\models\\hospitalcoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\models\\efcoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\models\\efcoredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\models\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\controllers\\employscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\controllers\\employscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\models\\employ.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\models\\employ.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|c:\\wipro_dotnet\\employcrud\\employcrud\\employcrud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7433DBE5-40C4-4F05-A5BB-11EFE3C5D778}|EmployCrud\\EmployCrud.csproj|solutionrelative:employcrud\\employcrud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DecryptionHelper.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Middleware\\DecryptionHelper.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Middleware\\DecryptionHelper.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Middleware\\DecryptionHelper.cs",
+              "RelativeToolTip": "EmployCrud\\Middleware\\DecryptionHelper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T05:21:27.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EncryptionHelper.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Middleware\\EncryptionHelper.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Middleware\\EncryptionHelper.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Middleware\\EncryptionHelper.cs",
+              "RelativeToolTip": "EmployCrud\\Middleware\\EncryptionHelper.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T05:20:34.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "EmployCrud\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T05:19:35.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Models\\Users.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\Users.cs",
+              "RelativeToolTip": "EmployCrud\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T05:17:13.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorsController.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Controllers\\DoctorsController.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Controllers\\DoctorsController.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Controllers\\DoctorsController.cs",
+              "RelativeToolTip": "EmployCrud\\Controllers\\DoctorsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T07:57:45.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Models\\Doctor.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\Doctor.cs",
+              "RelativeToolTip": "EmployCrud\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T07:52:45.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HospitalCoreDbContext.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\HospitalCoreDbContext.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Models\\HospitalCoreDbContext.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\HospitalCoreDbContext.cs",
+              "RelativeToolTip": "EmployCrud\\Models\\HospitalCoreDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T07:52:19.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmploysController.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Controllers\\EmploysController.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Controllers\\EmploysController.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Controllers\\EmploysController.cs",
+              "RelativeToolTip": "EmployCrud\\Controllers\\EmploysController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:52:32.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EFCoreDbContext.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\EFCoreDbContext.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Models\\EFCoreDbContext.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\EFCoreDbContext.cs",
+              "RelativeToolTip": "EmployCrud\\Models\\EFCoreDbContext.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:47:58.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Program.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Program.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Program.cs",
+              "RelativeToolTip": "EmployCrud\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwB0AAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:46:44.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployCrud\\appsettings.json",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\appsettings.json",
+              "RelativeToolTip": "EmployCrud\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-04T08:45:21.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Employ.cs",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\Employ.cs",
+              "RelativeDocumentMoniker": "EmployCrud\\Models\\Employ.cs",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\Models\\Employ.cs",
+              "RelativeToolTip": "EmployCrud\\Models\\Employ.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T08:43:47.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployCrud.csproj",
+              "DocumentMoniker": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\EmployCrud.csproj",
+              "RelativeDocumentMoniker": "EmployCrud\\EmployCrud.csproj",
+              "ToolTip": "C:\\Wipro_Dotnet\\EmployCrud\\EmployCrud\\EmployCrud.csproj",
+              "RelativeToolTip": "EmployCrud\\EmployCrud.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-04T08:43:17.575Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
