@@ -1,0 +1,66 @@
+CREATE DATABASE VehicleServiceDB;
+GO
+
+USE VehicleServiceDB;
+GO
+
+-- Users Table (Customers & Mechanics)
+CREATE TABLE Users (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    PasswordHash NVARCHAR(255) NOT NULL,  -- Store hashed passwords
+    Role NVARCHAR(50) CHECK (Role IN ('Customer', 'Mechanic')) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Vehicles Table (Customer's Registered Vehicles)
+CREATE TABLE Vehicles (
+    VehicleId INT IDENTITY(1,1) PRIMARY KEY,
+    UserId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    Make NVARCHAR(50) NOT NULL,  -- e.g., Toyota, Honda
+    Model NVARCHAR(50) NOT NULL, -- e.g., Corolla, Civic
+    Year INT NOT NULL,
+    LicensePlate NVARCHAR(20) UNIQUE NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Service Types Table (Types of Services)
+CREATE TABLE Services (
+    ServiceId INT IDENTITY(1,1) PRIMARY KEY,
+    ServiceName NVARCHAR(100) NOT NULL, -- e.g., Oil Change, Brake Repair
+    Description NVARCHAR(MAX) NULL,
+    Price DECIMAL(10,2) NOT NULL
+);
+
+-- Bookings Table (Service Appointments)
+CREATE TABLE Bookings (
+    BookingId INT IDENTITY(1,1) PRIMARY KEY,
+    VehicleId INT FOREIGN KEY REFERENCES Vehicles(VehicleId) ON DELETE CASCADE,
+    ServiceId INT FOREIGN KEY REFERENCES Services(ServiceId) ON DELETE CASCADE,
+    MechanicId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE SET NULL, -- Assign a mechanic
+    BookingDate DATETIME NOT NULL,
+    Status NVARCHAR(50) CHECK (Status IN ('Pending', 'Confirmed', 'Completed', 'Cancelled')) DEFAULT 'Pending',
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Payments Table (Tracks Service Payments)
+CREATE TABLE Payments (
+    PaymentId INT IDENTITY(1,1) PRIMARY KEY,
+    BookingId INT FOREIGN KEY REFERENCES Bookings(BookingId) ON DELETE CASCADE,
+    AmountPaid DECIMAL(10,2) NOT NULL,
+    PaymentDate DATETIME DEFAULT GETDATE(),
+    PaymentMethod NVARCHAR(50) CHECK (PaymentMethod IN ('Cash', 'Credit Card', 'Online')) NOT NULL
+);
+🎯 How It Works
+Users sign up (Customers register their vehicles, mechanics get assigned to bookings).
+Customers book a service for their vehicle.
+A mechanic is assigned to the booking.
+After service completion, payment is recorded.
+🚀 Next Steps
+Would you like:
+✅ Stored procedures for booking management?
+✅ Triggers for automatic status updates?
+✅ Sample data for testing?
+
+Let me know how I can assist! 🚗🔧

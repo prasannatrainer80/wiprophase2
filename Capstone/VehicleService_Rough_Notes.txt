@@ -1,0 +1,23 @@
+Customer-DashBoard
+__________________
+
+CustomerInfo
+
+ShowCustomer Vehicles
+
+AddService
+
+ServiceInfo
+
+Payment/Collect Vehicle
+
+Mechanic-Dashboard
+___________________
+
+MechanicInfo
+
+ShowMechanic Vehicles
+
+Service Vehicles Status
+
+Payment Request
