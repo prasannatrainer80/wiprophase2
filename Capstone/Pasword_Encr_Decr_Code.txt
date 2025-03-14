@@ -1,0 +1,92 @@
+ertainly! Encrypting and decrypting passwords in .NET Core is crucial for maintaining security. Below is a simple example using the Aes class for encryption and decryption. Note that for password storage, it's generally recommended to hash passwords rather than encrypt them. However, for scenarios where encryption is necessary, here's how you can do it:
+
+Encryption
+
+using System;
+using System.IO;
+using System.Security.Cryptography;
+using System.Text;
+
+public class EncryptionHelper
+{
+    private static readonly byte[] Key = Encoding.UTF8.GetBytes("your-32-char-key-here-123456789012");
+    private static readonly byte[] IV = Encoding.UTF8.GetBytes("your-16-char-iv-here");
+
+    public static string Encrypt(string plainText)
+    {
+        using (Aes aesAlg = Aes.Create())
+        {
+            aesAlg.Key = Key;
+            aesAlg.IV = IV;
+
+            ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
+
+            using (MemoryStream msEncrypt = new MemoryStream())
+            {
+                using (CryptoStream csEncrypt = new CryptoStream(msEncrypt, encryptor, CryptoStreamMode.Write))
+                {
+                    using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
+                    {
+                        swEncrypt.Write(plainText);
+                    }
+                    return Convert.ToBase64String(msEncrypt.ToArray());
+                }
+            }
+        }
+    }
+}
+Decryption
+
+using System;
+using System.IO;
+using System.Security.Cryptography;
+using System.Text;
+
+public class DecryptionHelper
+{
+    private static readonly byte[] Key = Encoding.UTF8.GetBytes("your-32-char-key-here-123456789012");
+    private static readonly byte[] IV = Encoding.UTF8.GetBytes("your-16-char-iv-here");
+
+    public static string Decrypt(string cipherText)
+    {
+        using (Aes aesAlg = Aes.Create())
+        {
+            aesAlg.Key = Key;
+            aesAlg.IV = IV;
+
+            ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
+
+            using (MemoryStream msDecrypt = new MemoryStream(Convert.FromBase64String(cipherText)))
+            {
+                using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+                {
+                    using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                    {
+                        return srDecrypt.ReadToEnd();
+                    }
+                }
+            }
+        }
+    }
+}
+Usage Example
+
+public class Program
+{
+    public static void Main()
+    {
+        string original = "MySecretPassword";
+
+        // Encrypt the password
+        string encrypted = EncryptionHelper.Encrypt(original);
+        Console.WriteLine($"Encrypted: {encrypted}");
+
+        // Decrypt the password
+        string decrypted = DecryptionHelper.Decrypt(encrypted);
+        Console.WriteLine($"Decrypted: {decrypted}");
+    }
+}
+Important Notes
+Key and IV: Ensure that the key and IV are securely stored and managed. They should be kept secret and not hard-coded in production code.
+Security Practices: For password storage, consider using hashing algorithms like PBKDF2, bcrypt, or Argon2 instead of encryption.
+Feel free to adapt this code to your specific needs and ensure you follow best security practices!

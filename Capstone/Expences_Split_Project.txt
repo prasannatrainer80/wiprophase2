@@ -1,0 +1,64 @@
+CREATE DATABASE ExpenseSplitterDB;
+GO
+
+USE ExpenseSplitterDB;
+GO
+
+-- Users table
+CREATE TABLE Users (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    PasswordHash NVARCHAR(255) NOT NULL,  -- Store hashed passwords
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Groups table (optional, for group-based expense splitting)
+CREATE TABLE Groups (
+    GroupId INT IDENTITY(1,1) PRIMARY KEY,
+    GroupName NVARCHAR(100) NOT NULL,
+    CreatedBy INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE SET NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Group Members table (maps users to groups)
+CREATE TABLE GroupMembers (
+    GroupMemberId INT IDENTITY(1,1) PRIMARY KEY,
+    GroupId INT FOREIGN KEY REFERENCES Groups(GroupId) ON DELETE CASCADE,
+    UserId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    JoinedAt DATETIME DEFAULT GETDATE(),
+    UNIQUE (GroupId, UserId)
+);
+
+-- Expenses table
+CREATE TABLE Expenses (
+    ExpenseId INT IDENTITY(1,1) PRIMARY KEY,
+    GroupId INT NULL FOREIGN KEY REFERENCES Groups(GroupId) ON DELETE CASCADE, -- Nullable for individual expenses
+    PaidBy INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE SET NULL,
+    Description NVARCHAR(255) NOT NULL,
+    Amount DECIMAL(10,2) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Expense Participants table (Tracks who owes how much)
+CREATE TABLE ExpenseParticipants (
+    ExpenseParticipantId INT IDENTITY(1,1) PRIMARY KEY,
+    ExpenseId INT FOREIGN KEY REFERENCES Expenses(ExpenseId) ON DELETE CASCADE,
+    UserId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    AmountOwed DECIMAL(10,2) NOT NULL
+);
+
+-- Settlements table (tracks payments made between users)
+CREATE TABLE Settlements (
+    SettlementId INT IDENTITY(1,1) PRIMARY KEY,
+    PaidBy INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    PaidTo INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    Amount DECIMAL(10,2) NOT NULL,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+🎯 How It Works
+Users sign up and create/join groups.
+Expenses are added with the amount and who paid.
+Participants are added with how much each person owes.
+The system calculates who needs to settle debts witxh whom.
+Settlements are recorded when users pay each other.
