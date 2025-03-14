@@ -1,0 +1,45 @@
+Online Book Store
+___________________
+
+UserData
+_________
+
+UserId (Pk)
+UserFirstName
+UserLastName
+UserName
+Password
+Email
+Mobile
+
+Books 
+_____
+
+BookID+(PK)
+BookName
+Author
+PublishedDate
+Publication
+NoOfCopies
+Category
+Price
+Status (YES/NO) 
+
+Wallet
+______
+WalletID-
+UserId-
+walletType
+WalletAmount
+
+Purchase
+________
+
+PurchaseId+
+UserID-
+BookId-
+NoOfCopies
+BillAmount
+PaymentStatus
+purchaseDate
+

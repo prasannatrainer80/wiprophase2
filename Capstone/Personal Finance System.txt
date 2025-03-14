@@ -1,0 +1,22 @@
+Personal Finance System : 
+
+Users
+-----
+userId+
+UserFirstName
+UserLastName
+UserName
+Passcode
+Email
+MobileNo
+
+Expenses : 
+___________
+ExpenseId+(Identity(1,1)
+UserId-(FK)
+Category
+ExpenceDate
+ExpenseAmount
+IsApproved(YES/NO) 
+ExpenseDescription
+ManagerComments
