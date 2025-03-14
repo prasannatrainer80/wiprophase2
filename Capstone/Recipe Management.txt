@@ -1,0 +1,23 @@
+Recipe Management
+___________________
+
+Customer
+________
+
+CustomerID+
+CustomerName
+Email
+Mobile
+customerUserName
+customerPassword
+status
+
+Recipe
+_______
+
+RecipeId+
+RecipeName
+IngreditantsList
+Instructions
+RecipeImage
+RecipeCategory
