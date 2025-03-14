@@ -1,0 +1,33 @@
+Health and Fitness
+___________________
+
+-- Users Table
+CREATE TABLE Users (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    PasswordHash NVARCHAR(255) NOT NULL,  -- Store hashed passwords
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    Gender,
+    Height
+    Weight
+);
+
+UserWorkouts
+______________
+
+WorkOutId+
+UserId-
+WorkOutType (Cardio/Strengthing/Yoga)
+DurationMinutes
+CalaoriesBurned
+Workoutdate
+
+CREATE TABLE ProgressTracking (
+    ProgressId INT IDENTITY(1,1) PRIMARY KEY,
+    UserId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    WeightKG DECIMAL(5,2) NOT NULL,
+    BMI DECIMAL(5,2) NULL, -- Can be calculated (Weight / Height^2)
+    BodyFatPercentage DECIMAL(5,2) NULL,
+    CheckingDate DateTime
+);
