@@ -1,0 +1,72 @@
+ChatApplication
+__________________
+
+Users
+______
+UserId+
+FullName
+UserName
+Password
+Status
+Email
+Password
+
+ChatApp
+________
+ChatId+
+ToUser-
+FromUser-
+UserMessage
+ChatTime(datetime)
+
+________________________________________
+
+CREATE DATABASE ChatAppDB;
+GO
+
+USE ChatAppDB;
+GO
+
+-- Users Table
+CREATE TABLE Users (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    PasswordHash NVARCHAR(255) NOT NULL,  -- Store hashed passwords
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Conversations Table (Handles both one-on-one and group chats)
+CREATE TABLE Conversations (
+    ConversationId INT IDENTITY(1,1) PRIMARY KEY,
+    ConversationName NVARCHAR(255) NULL,  -- NULL for one-on-one chats
+    IsGroup BIT DEFAULT 0, -- 0 = Private Chat, 1 = Group Chat
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Conversation Members (Users in a conversation)
+CREATE TABLE ConversationMembers (
+    ConversationMemberId INT IDENTITY(1,1) PRIMARY KEY,
+    ConversationId INT FOREIGN KEY REFERENCES Conversations(ConversationId) ON DELETE CASCADE,
+    UserId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    JoinedAt DATETIME DEFAULT GETDATE(),
+    UNIQUE (ConversationId, UserId)
+);
+
+-- Messages Table
+CREATE TABLE Messages (
+    MessageId INT IDENTITY(1,1) PRIMARY KEY,
+    ConversationId INT FOREIGN KEY REFERENCES Conversations(ConversationId) ON DELETE CASCADE,
+    SenderId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    MessageText NVARCHAR(MAX) NOT NULL,
+    SentAt DATETIME DEFAULT GETDATE()
+);
+
+-- Message Status Table (Tracks Read/Delivered Status)
+CREATE TABLE MessageStatus (
+    MessageStatusId INT IDENTITY(1,1) PRIMARY KEY,
+    MessageId INT FOREIGN KEY REFERENCES Messages(MessageId) ON DELETE CASCADE,
+    UserId INT FOREIGN KEY REFERENCES Users(UserId) ON DELETE CASCADE,
+    Status NVARCHAR(50) CHECK (Status IN ('Sent', 'Delivered', 'Read')) NOT NULL,
+    UpdatedAt DATETIME DEFAULT GETDATE()
+);
